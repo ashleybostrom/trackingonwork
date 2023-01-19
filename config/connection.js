@@ -6,7 +6,8 @@ const db = mysql.createConnection(
       host: 'localhost',
       user: 'root',
       password: 'pass1234',
-      database: 'empTracker'
+      database: 'empTracker',
+      port: 3306
     },
     console.log('Connected to database.')
 );
