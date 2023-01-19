@@ -26,9 +26,9 @@ This CLI application manage a company's employee database so users can see and i
 1. **Inquirer:** Type `npm i inquirer@8.2.4` to install npm's inquirer package
 1. **MySQL Tables:** 
 * Type `mysql -u root -p` then enter password to access MySQL
-* Type `CREATE DATBASE employees;` to create the database
+* Type `CREATE DATBASE emp_db;` to create the database
 * Type `SHOW databases;` to check it was created
-* Type `USE employees;` to make sure correct database is referenced
+* Type `USE emp_db;` to make sure correct database is referenced
 * Type `source db/db.sql;` to use the database
 * Type `source db/schema.sql;` to use the schema files from that database
 * Type `quit;` to exit MySQL when you are complete

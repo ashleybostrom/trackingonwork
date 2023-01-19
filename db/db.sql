@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS empTracker;
+DROP DATABASE IF EXISTS emp_db;
 
-CREATE DATABASE empTracker;
-USE empTracker;
+CREATE DATABASE emp_db;
+USE emp_db;
