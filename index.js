@@ -27,7 +27,7 @@ function initialPrompt() {
     inquirer.prompt({
             type: 'list',
             name: 'menu',
-            message: 'Hello, how would you like to initial?',
+            message: 'Hello, how would you like to start?',
             choices: [
                 'View All Departments', 
                 'View All Roles', 
@@ -40,11 +40,11 @@ function initialPrompt() {
                 'Delete Department', 
                 'Delete Role', 
                 'Delete Employee',
-                'Quit'
-            ],
+                'Quit',
+                ],
     })
     .then(answer => {
-        switch (data.request) {
+        switch (answer.menu) {
             case 'View All Departments':
                 viewAllDepartments();
                 break;
@@ -85,7 +85,9 @@ function initialPrompt() {
 // View all departments
 function viewAllDepartments() {
     const sql = `SELECT * FROM department`;
-    db.query(sql, (err, result) => {
+    db.query
+    (sql, (
+        err, result) => {
         if (err) {
             res.status(500).json({ error: err.message })
             return;
@@ -94,6 +96,7 @@ function viewAllDepartments() {
         initialPrompt();
     });
 };
+
 
 // View all roles
 function viewAllRoles() {
@@ -133,6 +136,7 @@ function viewAllEmployees() {
 function addDepartment() {
     inquirer.prompt([
         {
+            id: "department_id",
             name: "department_name",
             type: "input",
             message: "Please enter the name of the department you want to add to the database."
