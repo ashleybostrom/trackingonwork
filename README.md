@@ -37,6 +37,6 @@ This CLI application manage a company's employee database so users can see and i
 When you have created your databases, type `npm run seeds && npm start` to view databases and create, read, update, or delete any data. You will be able to see any changes in your CLI.
 
 ## Walk-Through Video
-* [![Watch the video]]
+* [![Watch the video]](https://drive.google.com/file/d/1igyuv1RwjirknhNIi3KSsprFAsY045R4/view)
 
 ## Links
